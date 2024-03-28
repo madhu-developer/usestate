@@ -1,4 +1,18 @@
 import React,{useState} from 'react'
+export const Hide = () =>{
+    const [showData,setShowData] = useState(false);
+
+    const onClickShowData = () =>{
+        setShowData(!showData)
+    }
+
+    return(
+        <div>
+            <button onClick={onClickShowData}>{showData?"hide":"show"}</button>
+            {showData && ("This is working":"Not")}
+        </div>
+    )
+}
 
 export const Day2Hooks = () => {
     const initialArr = [

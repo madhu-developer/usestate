@@ -1,12 +1,9 @@
 import React from 'react'
-import { Day2Hooks } from './Hooks/Day2Hooks'
-//import { Day1 } from './Day1'
-//import { Day2 } from './Day2'
-
+import { FetchAPI } from './Day3'
 const App = () => {
   return (
     <div>
-      <Day2Hooks/>
+      <FetchAPI/>
     </div>
   )
 }
